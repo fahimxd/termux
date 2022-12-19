@@ -1,0 +1,18 @@
+cd ~
+
+cd ..
+
+cd usr/etc/apt
+
+echo "deb https://packages.termux.dev/termux-main-21/ stable main" > sources.list
+
+cd sources.list.d
+
+echo "deb https://termux.dev/game-packages-21-bin games stable" > game.list
+
+echo "deb https://termux.dev/science-packages-21-bin science stable" > science.list
+
+cd ~
+
+apt upgrade
+
